@@ -1,0 +1,30 @@
+body {
+    font-size: 20px;
+}
+h1, h2 {
+    text-align: center;
+}
+a {
+    color: red;
+}
+section a {
+    color: seagreen;
+}
+section ul {
+    list-style: none;
+}
+button {
+    background-color: skyblue;
+    font-size: 40px;
+    border: 10px dotted red;
+    border-radius: 30px 10px 30px 20px
+    }
+table {
+        background-image: radial-gradient(ellipse at center, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */;
+    }
+footer {
+    background-image: url(https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
