@@ -8,15 +8,47 @@
     <link rel="stylesheet" href="src/styles.css">
 </head>
 <body>
-    <header>
-
+    <!--header-->
+    <header class="header">
+        <div class="container">
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <span class="border-shadow"></span>
+        </div>            
     </header>
     <main>
+        <!--hero section-->
+        <section class="hero-section">
+            <div class="container">
+                <h1 class="hero-title">Denis Novik</h1>
+            <div class="image-holder">
+                <img src="src/Image/img1.png" alt="image description">
+            </div>
+            </div>
+        </section>
+        <!--about me section-->
         <section class="about_me_container">
             <h2 class="about_me">
                 About me
             </h2>
-            <div class="textholder_container"> 
+            <div class="container"> 
                 <p class="text_container">
                     Hi, I'm Denis – UX/UI designer from Minsk. 
                     I'm interested in design and everything connected with it.
@@ -28,6 +60,104 @@
                     Ready to implement excellent projects
                     with wonderful people.
                 </p>
+            </div>
+        </section>
+        <!--skills section-->
+        <section >
+            <div class="skills-section">
+                <h2 class="skills-section-title">
+                Skills
+                </h2>
+                <p class="skills-section-text">
+                I work in such programs as
+                </p>
+                <div class="skills-container">
+                    <ul class="skills-list-container" class="skills-list-text">
+                        <li class="skills-list-image">                        
+                            <div class="skills-list-item">
+                                <img src="src/Image/img2.jpg" alt="Adobe Photoshop">                            
+                            </div>
+                            <div class="skills-image-text">
+                                <div class="skills-list-text-item">
+                                    <strong class="skills-list-text-item">Adobe Photoshop</strong>
+                                </div>
+                                <img src="src/Image/img9.jpg" alt="skills level">
+                            </div>                            
+                        </li>
+                        <li class="skills-list-image">
+                            <div class="skills-list-item">
+                                <img src="src/Image/img3.png" alt="Adobe Illustrator">
+                            </div>
+                            <div class="skills-image-text">
+                                <div class="skills-list-text-item">
+                                    <strong class="skills-list-text-item">Adobe Illustrator</strong>
+                                </div>
+                                <img src="src/Image/img10.png" alt="skills level">
+                            </div>
+                        </li>
+                        <li class="skills-list-image">
+                            <div class="skills-list-item">
+                                <img src="src/Image/img4.png" alt="Adobe After Effect">                            
+                            </div>
+                            <div class="skills-image-text">
+                                <div class="skills-list-text-item">
+                                    <strong class="skills-list-text-item">Adobe After Effect</strong>
+                                </div>
+                                <img src="src/Image/img9.jpg" alt="skills level">
+                            </div>
+                        </li>
+                        <li class="skills-list-image">
+                            <div class="skills-list-item"> 
+                                <img src="src/Image/img5.png" alt="Figma">                            
+                            </div>
+                            <div class="skills-image-text">
+                                <div class="skills-list-text-item">
+                                    <strong> Figma</strong>
+                                </div>                            
+                                <img src="src/Image/img11.png" alt="skills level">
+                            </div>
+                        </li>
+                </ul>
+            </div>
+        </div>
+        </section>
+        <!--Portfolio section-->
+        <section class="portfolio-section">
+            <div class="portfolio-section-container">
+                <h2 class="portfolio-section-title">
+                    Portfolio
+                </h2>
+               <div class="porfolio-section-block">
+                    <div class="portfolio-section-image">
+                    <img src="src/Image/img6.jpg" alt="My project">
+                    </div>
+                    <div class="portfolio-section-link">
+                    <a href="#">
+                    Online fashion store - 
+                    Homepage
+                    </a>
+                    </div>
+               </div>
+               <div class="porfolio-section-block">
+                    <div class="portfolio-section-image"> 
+                        <img src="src/Image/img7.png" alt="My project">
+                    </div>
+                    <div class="portfolio-section-link">
+                    <a href="#" class="portfolio-section-link">
+                        Reebok Store - Concept
+                    </a>
+                    </div>
+                </div>
+                <div class="porfolio-section-block">
+                    <div class="portfolio-section-image">
+                        <img src="src/Image/img8.jpg" alt="My project">
+                    </div>
+                    <div class="portfolio-section-link">
+                        <a href="#" class="portfolio-section-link">
+                            Braun Landing Page - Concept
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
