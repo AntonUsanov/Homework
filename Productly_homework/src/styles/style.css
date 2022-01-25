@@ -13,15 +13,14 @@ a {
 }
 
 .header {
-    padding: 20px 0;
-    
+    padding: 20px 0; 
 }
 
 .container {
     padding: 0 15px;
     margin: 0 auto;
     width: 100%;
-    max-width: 1140px;
+    max-width: 1400px;
 }
 
 .header .container {
@@ -38,13 +37,13 @@ a {
 .nav {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .nav-list {
     list-style: none;
     margin: 0 60px 0 -20px;
-    padding: 10px 0;
-    
+    padding: 10px 0; 
 }
 
 .nav-list li {
@@ -55,14 +54,12 @@ a {
 .button-list {
     list-style: none;
     margin: 0 -10px;
-    padding: 0;
-        
+    padding: 0;    
 }
 
 .button-list li {
     display: inline-block;
     padding: 0 10px;
-    
 }
 
 .btn-white {
@@ -80,9 +77,158 @@ a {
     border-radius: 4px;
     color: #fff;
 }
+
 .hero-section {
+    margin: 0 auto;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    flex-direction: column;
+    align-items: center;
+    max-width: 1400px;
+}
+
+.hero-text,.hero-imageholder {
+    width: 50%;
+    padding: 0 15px;
+}
+
+.hero-title {
+    font-size: 44px;
+    color: #2F281E;
+    margin: 0;
+}
+
+.hero-description-text {
+    font-size: 18px;
+    color: #544837;
+    padding: 30px 0 45px;
+}
+
+.hero-button {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+}
+
+.hero-button-one {
+    display: block;
+    color: #FFFFFF;
+    background: #FF9900;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 15px 41px;
+}
+
+.hero-button-two {
+    margin-left: 30px;
+}
+
+.hero-button-two a {
+    display: inline-block;
+    text-decoration-line: underline;
+    color: #FF9900;
+    font-size: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.hero-imageholder img {
+    margin: 0;
+    width: 100%;
+}
+
+/*Tools*/
+
+.tools-title {
+    text-align: center;
+    color: #2F281E;
+    font-size: 36px;
+    margin-bottom: 52px;
+}
+
+.tools {
+    margin: 0 auto 60px;
+    max-width: 1400px;                    
+}
+
+.tools-list {
+    list-style: none;
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tools-list-item {
+    max-width: 25%;
+}
+
+.tools-list-item h2 {
+    font-size: 22px;
+    color: #2F281E;
+    font-style: normal;
+}
+
+.tools-list-item span {
+    color: #544837;
+    font-size: 16px;
+}
+
+.tool-button-holder {
+    text-align: center;
+    margin-bottom: 200px;
+}
+.tool-button {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 16px;
+    background: #FF9900;
+    border-radius: 4px;
+    padding: 15px 33px;
+}
+
+/*footer*/
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 0 15px 83px;
+    align-items: flex-end;
+}
+
+.footer-logo {
+    align-self: flex-start;
+}
+
+.footer-container ul {
+    list-style: none;
+    margin: 0;
+    color: #544837;
+    font-size: 16px;
+}
+
+.button input {
+    background: #FFFFFF;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.button button {
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    background: #FF9900;
+    border-radius: 4px;
+    border: none;
+    padding: 8px 15px;
 }
