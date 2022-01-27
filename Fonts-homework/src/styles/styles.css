@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'robotobold';
+}
+
+p {
+    font-family: 'robotoregular';
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-inf span:first-child {
+    font-family: 'robotobold';
+}
+
+.header-inf span:last-child {
+    font-family: 'robotomedium';
+}
+
+.second-list {
+    list-style: none;
+    padding: 0;
+}
+
+.second-list strong {
+    font-family: 'pt_sansbold';
+}
+
+.second-list p {
+    font-family: 'pt_sansregular';
+}

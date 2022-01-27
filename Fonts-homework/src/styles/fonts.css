@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'robotoblack';
+    src: url('../fonts/webfontkit-20220127-041219/roboto-black-webfont.woff2') format('woff2'),
+         url('../fonts/webfontkit-20220127-041219/roboto-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('../fonts/webfontkit-20220127-041219/roboto-bold-webfont.woff2') format('woff2'),
+         url('../fonts/webfontkit-20220127-041219/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('../fonts/webfontkit-20220127-041219/roboto-medium-webfont.woff2') format('woff2'),
+         url('../fonts/webfontkit-20220127-041219/roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../fonts/webfontkit-20220127-041219/roboto-regular-webfont.woff2') format('woff2'),
+         url('../fonts/webfontkit-20220127-041219/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'pt_sansbold';
+    src: url('../fonts/webfontkit-20220127-041219/ptsans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/webfontkit-20220127-041219/ptsans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'pt_sansregular';
+    src: url('../fonts/webfontkit-20220127-041219/ptsans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/webfontkit-20220127-041219/ptsans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
