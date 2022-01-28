@@ -12,8 +12,16 @@ a {
     color: #000;
 }
 
+main {
+    padding-top: 50px;
+}
+
 .header {
-    padding: 20px 0; 
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .container {
@@ -86,6 +94,7 @@ a {
     flex-wrap: wrap;
     align-items: center;
     max-width: 1400px;
+    position: sticky;
 }
 
 .hero-text,.hero-imageholder {
