@@ -1,67 +1,70 @@
 @font-face {
-    font-family: 'robotoblack';
-    src: url('../fonts/webfontkit-20220127-041219/roboto-black-webfont.woff2') format('woff2'),
-         url('../fonts/webfontkit-20220127-041219/roboto-black-webfont.woff') format('woff');
-    font-weight: normal;
+    font-family: 'roboto';
+    src: url('../fonts/webfontkit-20220128-054203/roboto-black-webfont.woff2') format('woff2'),
+         url('../fonts/webfontkit-20220128-054203/roboto-black-webfont.woff') format('woff'),
+         url('../fonts/webfontkit-20220128-054203/roboto-black-webfont.ttf') format('truetype'),
+         url('../fonts/webfontkit-20220128-054203/roboto-black-webfont.svg#robotoblack') format('svg');
+    font-weight: 900;
     font-style: normal;
 
 }
 
 
-
-
 @font-face {
-    font-family: 'robotobold';
-    src: url('../fonts/webfontkit-20220127-041219/roboto-bold-webfont.woff2') format('woff2'),
-         url('../fonts/webfontkit-20220127-041219/roboto-bold-webfont.woff') format('woff');
-    font-weight: normal;
+    font-family: 'roboto';
+    src: url('../fonts/webfontkit-20220128-054203/roboto-bold-webfont.woff2') format('woff2'),
+         url('../fonts/webfontkit-20220128-054203/roboto-bold-webfont.woff') format('woff'),
+         url('../fonts/webfontkit-20220128-054203/roboto-bold-webfont.ttf') format('truetype'),
+         url('../fonts/webfontkit-20220128-054203/roboto-bold-webfont.svg#robotobold') format('svg');
+    font-weight: 700;
     font-style: normal;
 
 }
 
 
-
-
-
 @font-face {
-    font-family: 'robotomedium';
-    src: url('../fonts/webfontkit-20220127-041219/roboto-medium-webfont.woff2') format('woff2'),
-         url('../fonts/webfontkit-20220127-041219/roboto-medium-webfont.woff') format('woff');
-    font-weight: normal;
+    font-family: 'roboto';
+    src: url('../fonts/webfontkit-20220128-054203/roboto-medium-webfont.woff2') format('woff2'),
+         url('../fonts/webfontkit-20220128-054203/roboto-medium-webfont.woff') format('woff'),
+         url('../fonts/webfontkit-20220128-054203/roboto-medium-webfont.ttf') format('truetype'),
+         url('../fonts/webfontkit-20220128-054203/roboto-medium-webfont.svg#robotomedium') format('svg');
+    font-weight: 500;
     font-style: normal;
 
 }
 
 
-
-
 @font-face {
-    font-family: 'robotoregular';
-    src: url('../fonts/webfontkit-20220127-041219/roboto-regular-webfont.woff2') format('woff2'),
-         url('../fonts/webfontkit-20220127-041219/roboto-regular-webfont.woff') format('woff');
-    font-weight: normal;
+    font-family: 'roboto';
+    src: url('../fonts/webfontkit-20220128-054203/roboto-regular-webfont.woff2') format('woff2'),
+         url('../fonts/webfontkit-20220128-054203/roboto-regular-webfont.woff') format('woff'),
+         url('../fonts/webfontkit-20220128-054203/roboto-regular-webfont.ttf') format('truetype'),
+         url('../fonts/webfontkit-20220128-054203/roboto-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: 400;
     font-style: normal;
 
 }
 
 
-
 @font-face {
-    font-family: 'pt_sansbold';
-    src: url('../fonts/webfontkit-20220127-041219/ptsans-bold-webfont.woff2') format('woff2'),
-         url('../fonts/webfontkit-20220127-041219/ptsans-bold-webfont.woff') format('woff');
-    font-weight: normal;
+    font-family: 'pt_sans';
+    src: url('../fonts/webfontkit-20220128-054203/ptsans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/webfontkit-20220128-054203/ptsans-bold-webfont.woff') format('woff'),
+         url('../fonts/webfontkit-20220128-054203/ptsans-bold-webfont.ttf') format('truetype'),
+         url('../fonts/webfontkit-20220128-054203/ptsans-bold-webfont.svg#pt_sansbold') format('svg');
+    font-weight: 700;
     font-style: normal;
 
 }
 
 
-
 @font-face {
-    font-family: 'pt_sansregular';
-    src: url('../fonts/webfontkit-20220127-041219/ptsans-regular-webfont.woff2') format('woff2'),
-         url('../fonts/webfontkit-20220127-041219/ptsans-regular-webfont.woff') format('woff');
-    font-weight: normal;
+    font-family: 'pt_sans';
+    src: url('../fonts/webfontkit-20220128-054203/ptsans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/webfontkit-20220128-054203/ptsans-regular-webfont.woff') format('woff'),
+         url('../fonts/webfontkit-20220128-054203/ptsans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/webfontkit-20220128-054203/ptsans-regular-webfont.svg#pt_sansregular') format('svg');
+    font-weight: 400;
     font-style: normal;
 
 }
