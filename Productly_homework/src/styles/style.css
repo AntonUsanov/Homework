@@ -12,8 +12,20 @@ a {
     color: #000;
 }
 
+body {
+    max-width: 1400px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 0 auto;
+}
+
 main {
     padding-top: 50px;
+}
+h2 {
+    color: #2F281E;
+    font-size: 36px;
+    font-weight: 700;
 }
 
 .header {
@@ -22,52 +34,54 @@ main {
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
-.container {
+.header-container {
     padding: 0 15px;
     margin: 0 auto;
     width: 100%;
     max-width: 1400px;
 }
 
-.header .container {
+.header .header-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
 }
 
-.logo {
+.header-container__logo-holder {
     max-width: 100px;
 }
 
-.nav {
+.header-container__nav {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.nav-list {
+.nav__list {
     list-style: none;
     margin: 0 60px 0 -20px;
     padding: 10px 0; 
 }
 
-.nav-list li {
+.nav__list li {
     display: inline-block;
     padding: 0 20px;
 }
 
-.button-list {
+.nav__button-list {
     list-style: none;
     margin: 0 -10px;
     padding: 0;    
 }
 
-.button-list li {
+.nav__button-list li {
     display: inline-block;
     padding: 0 10px;
+    font-weight: 600;
 }
 
 .btn-white {
@@ -75,6 +89,7 @@ main {
     border: 1px solid #BCD0E5;
     padding: 10px 20px;
     border-radius: 4px;
+    background: #FFFFFF;
 }
 
 .btn-orange {
@@ -86,8 +101,8 @@ main {
     color: #fff;
 }
 
+/*Hereo section*/
 .hero-section {
-    margin: 0 auto;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -95,15 +110,17 @@ main {
     align-items: center;
     max-width: 1400px;
     position: sticky;
+    padding-top: 40px;
 }
 
-.hero-text,.hero-imageholder {
+.hero__text-holder, .hero__image-holder {
     width: 50%;
     padding: 0 15px;
 }
 
 .hero-title {
     font-size: 44px;
+    font-weight: 700;
     color: #2F281E;
     margin: 0;
 }
@@ -114,11 +131,12 @@ main {
     padding: 30px 0 45px;
 }
 
-.hero-button {
+.hero__button-holder {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     margin: 0;
+    font-weight: 700;
 }
 
 .hero-button-one {
@@ -126,7 +144,6 @@ main {
     color: #FFFFFF;
     background: #FF9900;
     border-radius: 4px;
-    font-weight: bold;
     font-size: 16px;
     padding: 15px 41px;
 }
@@ -154,14 +171,16 @@ main {
 
 .tools-title {
     text-align: center;
-    color: #2F281E;
-    font-size: 36px;
-    margin-bottom: 52px;
 }
 
-.tools {
-    margin: 0 auto 60px;
-    max-width: 1400px;                    
+.tools-container {
+    margin: 0 auto 100px;
+    max-width: 1400px;
+    padding-top: 100px;                    
+}
+
+.tools-container h2 {
+    padding-bottom: 55px;
 }
 
 .tools-list {
@@ -174,22 +193,25 @@ main {
 
 .tools-list-item {
     max-width: 25%;
+    padding-right: 40px;
 }
 
-.tools-list-item h2 {
+.tools-list-item h3 {
     font-size: 22px;
     color: #2F281E;
     font-style: normal;
+    font-weight: 600;
 }
 
 .tools-list-item span {
     color: #544837;
     font-size: 16px;
+    font-weight: 500;
 }
 
 .tool-button-holder {
     text-align: center;
-    margin-bottom: 200px;
+    padding: 60px 0 100px;
 }
 .tool-button {
     color: #FFFFFF;
@@ -201,65 +223,129 @@ main {
 }
 
 /*Product Managers*/
-.section-prod__holder {
+.section-prod__container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 auto;
     max-width: 1400px;
-    padding: 0 15px 80px;
+    padding: 0 15px 100px;
 }
 
-.imageholder {
+.section-prod__imageholder {
     width: 50%;
     padding-right: 50px;
 }
 
-.text-holder {
+.section-prod__text-holder {
     width: 50%;
     padding-left: 50px;
+    margin: auto 0;
+}
+
+.text-holder__intro, .text-holder__description {
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .text-holder__list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .text-holder__list-item::before {
-    display: inline-block;
     position: absolute;
     content: '';
     background: #FF9900;
-    border-radius: 13.8542px;
+    border-radius: 14px;
     width: 35px;
     height: 35px;
-    margin-right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
 }
 
 .text-holder__list-item::after {
     content: '';
-    background: #FF9900;
-    border-radius: 13.8542px;
-    max-width: 35px;
+    position: absolute;
+    top: 35%;
+    left: 10px;
+    border-bottom: 2px solid #FFFFFF;
+    border-left: 2px solid #FFFFFF;
+    width: 15px;
+    height: 7px;
+    transform: rotate(-45deg);
 }
 
 .text-holder__list-item {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    padding-left: 65px;
+}
+
+/*Marketers, Design Professionals*/
+.section-marketers__container, .section-professionals__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 0 15px 100px;
+}
+
+.section-marketers__text-holder, .section-professionals__text-holder {
+    width: 50%;
+    padding-right: 50px;
+    margin: auto 0;
+}
+
+.section-marketers__imageholder, .section-professionals__imageholder {
+    width: 50%;
+    padding-left: 50px;
+}
+
+.marketers__text-holder__list, .proffesionals__text-holder__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.text-holder__pseudo-title, .professionals__pseudo-title {
+    padding-bottom: 3px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.section-marketers__text-holder h2 {
+    margin: 0 0 22px;
+}
+.section-professionals__text-holder h2 {
+    margin: 0 0 22px;
+}
+
+.marketers__text-holder__list-item, .proffesionals__text-holder__list-item {
+    padding: 25px 0 12px;
+}s
+
+.text-holder__explanation, .professionals__explanation {
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 /*footer*/
-.footer {
-    border-top: 1px solid rgba(188, 208, 229, 0.496913);
-    padding-top: 100px; 
-}
-
 .footer-container {
     margin: 0 auto;
     max-width: 1400px;
-    padding: 0 15px 83px;
+    padding: 100px 15px 83px 15px;
+    border-top: 1px solid rgba(188, 208, 229, 0.496913);
 }
 
-.footer-logo {
+.container__footer-logo {
     align-self: flex-start;
 }
 
@@ -269,12 +355,11 @@ main {
     justify-content:flex-end;
     align-items: flex-end;
     justify-items: flex-end;
-   
 }
 
 .footer-container ul {
     list-style: none;
-    margin: 0;
+    margin: 0 100px;
     color: #544837;
     font-size: 16px;
 }
