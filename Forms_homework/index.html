@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="src/styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <form action="#" class="form">
+                <h1 class="form__title">
+                    Create an Account
+                </h1>
+                <div class="form__name-flex">
+                    <div class="form__input-holder1">
+                        <input type="text" class="input-holder1__first-name">
+                    </div>
+                    <div class="form__input-holder2">
+                        <input type="text" class="input-holder2__last-name">
+                    </div>
+                </div>
+                    <div class="form__mail-holder">
+                        <input type="mail" class="mail-holder__addres">
+                    </div>
+                    <!--radio-->
+                    <div class="form__radio-holder">
+                        <ul class="radio-holder__list">
+                            <li class="radio-holder__item">
+                                <input class="radio-holder__input" type="radio" name="radio">
+                                <label class="radio-holder__label" for="radio">
+                                    <input class="radio-holder__input" type="radio" name="radio">
+                                    <span class="label__fake"></span>
+                                    <span>Male</span> 
+                                </label>                                
+                            </li>
+                            <li class="radio-holder__item">
+                                <input class="radio-holder__input" type="radio" name="radio">
+                                <label class="radio-holder__label" for="radio">Female</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Select-->
+                    <div class="form__country-flex">
+                        <div class="form__select-holder">
+                            <select name="select" id="select" class="form__select">
+                                <option value="country1">Country</option>
+                                <option value="country2">country2</option>
+                                <option value="country3">country3</option>
+                                <option value="country4">country4</option>
+                                <option value="country5">country5</option>
+                            </select>
+                            <span class="form__select-icon"></span>
+                        </div>
+                    <!--City-->    
+                        <div class="form__city-holder">
+                            <input type="text" class="city-holder__text">
+                        </div>
+                    </div>
+                    <div class="form__button-holder">
+                        <button class="form__button" type="submit">Sign Up</button>
+                    </div>
+                    <div class="form__policy-holder">
+                        <p>By clicking the 'Sign Up' button, you confirm that you accept our <a href="#" >Terms of Use</a> and <a href="#" >Privacy Policy</a>.</p>
+                        <p>Have an account? <a href="#" >Log In</a> </p>
+                    </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
