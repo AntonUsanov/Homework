@@ -7,10 +7,10 @@ body {
     background: #F2F2F2;
 }
 
-.form__title {
-    color: #1C1C1C;
-    font-size: 24px;
-    padding: 20px 0 0 20px;
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
 }
 
 .container {
@@ -18,6 +18,13 @@ body {
     margin: 0 auto;
     background: #FFFFFF;
     border-radius: 6px;
+    padding: 20px;
+}
+
+.form__title, .form-profile__title {
+    color: #1C1C1C;
+    font-size: 24px;
+    padding-bottom: 20px;
 }
 
 .form__name-flex {
@@ -195,14 +202,14 @@ body {
     border-left: var(--size) solid transparent;
     border-right: var(--size) solid transparent;
     border-bottom: var(--size) solid #969696;
-    top: 40%;
+    top: 35%;
 }
 
 .form__select-icon::after {
     border-left: var(--size) solid transparent;
     border-right: var(--size) solid transparent;
     border-top: var(--size) solid #969696;
-    top: 60%;
+    top: 65%;
 }
 
 /*City*/
@@ -259,4 +266,165 @@ body {
 .form__policy-holder a {
     text-decoration: none;
     color: #007BFF;
+}
+
+/*Profile*/
+.form-profile__input {
+    display: inline-block;
+    border-radius: 6px;
+    border: 1px solid #E4E4E4;;
+    height: 30px;
+    color: #fff;
+    z-index: -1;
+}
+
+.form-profile__input:focus {
+    background-color:  #007BFF;
+}
+
+.form-profile__pic {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.pic__input-holder {
+    position: relative;
+    margin: 0 10px 0 20px;
+}
+
+.pic__input-holder>.form-profile__input {
+    width: 138px;
+}
+
+.input-holder__label {
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    z-index: 2;
+}
+
+.input-holder__fake {
+    position: absolute;
+    width: 138px;
+    height: 30px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    border: 1px solid #E4E4E4;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.test-after::after {
+    content: "Up to 1 MB (300x300 px)";
+    font-size: 12px;
+    color: #545454;
+    letter-spacing: -0.2px;
+    padding-top: 7px;
+    margin-left: 20px;
+}
+
+.pic__button {
+    height: 30px;
+    width: 30px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    border: 1px solid #E4E4E4;
+    padding-top: 4px;
+    margin-bottom: 20px;
+}
+
+/*info*/
+.form-profile__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-profile__input {
+    width: 240px;
+}
+
+.info__input-name::before, .info__input-email::before {
+    display: block;
+    color: #545454;
+    letter-spacing: -0.2px;
+    font-size: 15px;
+    padding-bottom: 7px;
+}
+
+.info__input-name::before {
+    content: "Name";
+}
+
+.info__input-email::before {
+    content: "E-mail";
+}
+
+/*country-city*/
+
+.form-profile__country-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.form__select, .city-holder__text {
+    width: 245px;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    height: 38px;
+}
+
+.country-flex__select-holder::before {
+    content: "Country";
+    display: block;
+    color: #545454;
+    font-size: 15px;
+    padding: 20px 0 7px;
+}
+.form__select-holder {
+    position: relative;
+}
+
+.form__select-icon {
+    display: block;
+    background: #FFFFFF;
+    height: 32px;
+    width: 33px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 3px;
+    right: 2px;
+    pointer-events: none;
+}
+
+.form__select-icon::before, .form__select-icon::after {
+    --size: 5px;
+
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form__select-icon::before {
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-bottom: var(--size) solid #969696;
+    top: 35%;
+}
+
+.form__select-icon::after {
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-top: var(--size) solid #969696;
+    top: 65%;
 }

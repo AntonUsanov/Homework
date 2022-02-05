@@ -12,42 +12,103 @@
 </head>
 <body>
     <main>
-        <div class="container">
-            <form action="#" class="form">
-                <h1 class="form__title">
-                    Create an Account
-                </h1>
-                <div class="form__name-flex">
-                    <div class="form__input-holder1">
-                        <input type="text" class="input-holder1__first-name">
+        <div class="flex">
+            <div class="container">
+                <form action="#" class="form">
+                    <h1 class="form__title">
+                        Create an Account
+                    </h1>
+                    <div class="form__name-flex">
+                        <div class="form__input-holder1">
+                            <input type="text" class="input-holder1__first-name">
+                        </div>
+                        <div class="form__input-holder2">
+                            <input type="text" class="input-holder2__last-name">
+                        </div>
                     </div>
-                    <div class="form__input-holder2">
-                        <input type="text" class="input-holder2__last-name">
+                        <div class="form__mail-holder">
+                            <input type="mail" class="mail-holder__addres">
+                        </div>
+                        <!--radio-->
+                        <div class="form__radio-holder">
+                            <ul class="radio-holder__list">
+                                <li class="radio-holder__item">
+                                    <label class="radio-holder__label" for="radio">
+                                        <input class="radio-holder__input" type="radio" name="radio">
+                                        <span class="label__fake"></span>
+                                        <span>Male</span> 
+                                    </label>                                
+                                </li>
+                                <li class="radio-holder__item">                                
+                                    <label class="radio-holder__label" for="radio">
+                                        <input class="radio-holder__input" type="radio" name="radio">
+                                        <span class="label__fake"></span>
+                                        <span>Female</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Select-->
+                        <div class="form__country-flex">
+                            <div class="form__select-holder">
+                                <select name="select" id="select" class="form__select">
+                                    <option value="country1">Country</option>
+                                    <option value="country2">country2</option>
+                                    <option value="country3">country3</option>
+                                    <option value="country4">country4</option>
+                                    <option value="country5">country5</option>
+                                </select>
+                                <span class="form__select-icon"></span>
+                            </div>
+                        <!--City-->    
+                            <div class="form__city-holder">
+                                <input type="text" class="city-holder__text">
+                            </div>
+                        </div>
+                        <!--Button-->
+                        <div class="form__button-holder">
+                            <button class="form__button" type="submit">Sign Up</button>
+                        </div>
+                        <div class="form__policy-holder">
+                            <p>By clicking the 'Sign Up' button, you confirm that you accept our <a href="#" >Terms of Use</a> and <a href="#" >Privacy Policy</a>.</p>
+                            <p>Have an account? <a href="#" >Log In</a> </p>
+                        </div>
+                </form>
+            </div>
+            <!--Profile-->
+            <div class="container">
+                <form action="#" class="form-profile">
+                    <h1 class="form-profile__title">
+                        Profile
+                    </h1>
+                    <!--picture-->
+                    <div class="form-profile__pic">
+                        <img src="src/images/user_image.png" alt="pic" class="pic__area">
+                        <div class="test-after">
+                            <div class="pic__input-holder">                            
+                                <input id="pic-upload" type="file" class="form-profile__input">                            
+                                <label for="file" class="input-holder__label">                               
+                                    <img src="src/images/Photo Camera.svg" alt="file-icon" class="">
+                                </label>
+                                <span class="input-holder__fake"></span>                                
+                            </div>
+                        </div>
+                        <button class="pic__button" type="submit">
+                                <img src="src/images/Trash-icon.svg" alt="icon">
+                        </button>                        
                     </div>
-                </div>
-                    <div class="form__mail-holder">
-                        <input type="mail" class="mail-holder__addres">
+                    <!--info-->
+                    <div class="form-profile__info">
+                        <div class="info__input-name">
+                            <input type="text" class="form-profile__input">
+                        </div>
+                        <div class="info__input-email">
+                            <input type="email" class="form-profile__input input__email">
+                        </div>                        
                     </div>
-                    <!--radio-->
-                    <div class="form__radio-holder">
-                        <ul class="radio-holder__list">
-                            <li class="radio-holder__item">
-                                <input class="radio-holder__input" type="radio" name="radio">
-                                <label class="radio-holder__label" for="radio">
-                                    <input class="radio-holder__input" type="radio" name="radio">
-                                    <span class="label__fake"></span>
-                                    <span>Male</span> 
-                                </label>                                
-                            </li>
-                            <li class="radio-holder__item">
-                                <input class="radio-holder__input" type="radio" name="radio">
-                                <label class="radio-holder__label" for="radio">Female</label>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--Select-->
-                    <div class="form__country-flex">
-                        <div class="form__select-holder">
+                    <!--Countr-city-->
+                    <div class="form-profile__country-flex">
+                        <div class="country-flex__select-holder">
                             <select name="select" id="select" class="form__select">
                                 <option value="country1">Country</option>
                                 <option value="country2">country2</option>
@@ -56,20 +117,24 @@
                                 <option value="country5">country5</option>
                             </select>
                             <span class="form__select-icon"></span>
-                        </div>
-                    <!--City-->    
+                        </div>                     
                         <div class="form__city-holder">
                             <input type="text" class="city-holder__text">
                         </div>
                     </div>
-                    <div class="form__button-holder">
-                        <button class="form__button" type="submit">Sign Up</button>
+                    <!--Zip-Phone-->
+                    <div class="form-profile__info">
+                        <input type="text" class="form-profile__input">
+                        <input type="phone" class="form-profile__input">
                     </div>
-                    <div class="form__policy-holder">
-                        <p>By clicking the 'Sign Up' button, you confirm that you accept our <a href="#" >Terms of Use</a> and <a href="#" >Privacy Policy</a>.</p>
-                        <p>Have an account? <a href="#" >Log In</a> </p>
-                    </div>
-            </form>
+                    <!--Profile-button-->
+                    <button class="form-profile__button" type="submit">
+                        Update
+                    </button>
+                    
+
+                </form>
+            </div>
         </div>
     </main>
 </body>
