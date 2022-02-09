@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ptoductly</title>
-    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,83 +13,93 @@
 <body>
     <!--Header section-->
     <header class="header">
-        <div class="header-container">
-            <div class="header-container__logo-holder">
-                <a href="#">
-                    <img src="src/image/Logo.png" alt="logo">
+        <div class="container">
+            <div class="logo">
+                <a href="#" class="logo__link">
+                    <img src="src/image/Logo.png" alt="logo" class="logo__img">
                 </a>
             </div>
-            <nav class="header-container__nav">
-                <ul class="nav__list">
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Customers</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Resources</a></li>
+            <div class="header__nav-holder">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Product</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Customers</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Pricing</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Resources</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="btn-list">
+                    <li class="btn-list__item">
+                        <a href="#" class="btn btn_white">Sign In</a>
+                    </li>
+                    <li class="btn-list__item">
+                        <a href="#" class="btn btn_orange">Sign Up</a>
+                    </li>
                 </ul>
-                <ul class="nav__button-list">
-                    <li><a href="#" class="btn-white">Sign in</a></li>
-                    <li><a href="#" class="btn-orange">Sign up</a></li>
-                </ul>
-            </nav>
+            </div>    
         </div>
     </header>
-    <main>
-        <!--Hero section-->
-        <section>
-            <div class="hero-section">
-                <div class="hero__text-holder">
-                    <h1 class="hero-title">The Design Thinking superpowers</h1>
-                    <div class="hero-description-text">
+    <main>        
+        <div class="container">
+            <!--Hero section-->            
+            <section class="hero-section">                
+                <div class="hero-section__text-holder">
+                    <h1 class="hero-section__title">The Design Thinking superpowers</h1>
+                    <div class="hero-section__text">
                         <p>
                         Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.
                         </p>
                     </div>
-                    <div class="hero__button-holder">
-                        <div>
-                            <a href="#" class="hero-button-one">Get started</a>
-                        </div>
-                        <div  class="hero-button-two">
-                            <a href="#">
-                                <img src="src/image/Triangle Copy 6.png" alt="image2">
-                            </a> 
-                            <a href="#"> 
-                                Watch the Video
-                            </a>
-                        </div>
-                    </div>
+                    <ul class="btn-list">                        
+                        <li class="btn-list__item">
+                            <a href="#" class="btn btn_orange">Get started</a>
+                        </li>
+                        <li class="btn-list__item">
+                            <a href="#"  class="btn btn_white white_big">
+                                <img class="btn_white__image" src="src/image/Triangle Copy 6.png" alt="image2">
+                                <span> Watch the Video</span> 
+                            </a>                            
+                        </li>                        
+                    </ul>
                 </div>
-                <div class="hero__image-holder">
-                    <img src="src/image/Image.png" alt="image">
-                </div>
-            </div>
-        </section>
-        <!--Tools section-->
-        <section>
-            <div class="tools-container">
-                <h2  class="tools-title">We design tools to unveil your superpowers</h2>
-                <ul class="tools-list">
-                    <li class="tools-list-item">
+                <div class="hero-section__image-holder">
+                    <img class="hero-section__image" src="src/image/Image.png" alt="image">
+                </div>                
+            </section>
+            <!--Tools section-->
+            <section class="tools-section">              
+                <h2  class="tools-section__title">We design tools to unveil your superpowers</h2>
+                <ul class="tools-section__list">
+                    <li class="tools-section__list-item">
                         <div>
                             <img src="src/image/icon1.png" alt="icon">
                             <h3>First click tests</h3>
                             <span>While most people enjoy casino gambling,</span>
                         </div>
                     </li>
-                    <li class="tools-list-item">
+                    <li class="tools-section__list-item">
                         <div>                            
                             <img src="src/image/icon2.png" alt="icon">
                             <h3>Design surveys</h3>
                             <span>Sports betting, lottery and bingo playing for the fun</span>
                         </div>
                     </li>
-                    <li class="tools-list-item">
+                    <li class="tools-section__list-item">
                         <div>                            
                             <img src="src/image/icon3.png" alt="icon">
                             <h3>Preference tests</h3>
                             <span>The Myspace page defines the individual.</span>
                         </div>
                     </li>
-                    <li class="tools-list-item">
+                    <li class="tools-section__list-item">
                         <div>                            
                             <img src="src/image/icon4.png" alt="icon">
                             <h3>Five second tests</h3>
@@ -97,96 +107,90 @@
                         </div>
                     </li>
                 </ul>
-                <div class="tool-button-holder">
-                    <a href="#"  class="tool-button">SIGN UP NOW</a>
-                </div>
-            </div>
-        </section>
-        <!--Design Professionals-->
-        <section class="section-professionals">
-            <div class="section-professionals__container">
+                <div class="tool-section__button-holder">
+                    <a href="#"  class="btn btn_orange">SIGN UP NOW</a>
+                </div>            
+            </section>
+            <!--Design Professionals-->
+            <section class="section-professionals">                
                 <div class="section-professionals__text-holder">                    
-                    <div class="professionals__pseudo-title">
+                    <div class="pseudo-title">
                         <span>Effortless Validation for</span>
                     </div>
                     <h2>Design Professionals</h2>
-                    <div class="professionals__explanation">
+                    <div class="explanation">
                         <p>The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person.</p>
                     </div>
-                    <div class="proffesionals__text-holder__list-holder">
-                        <ul class="proffesionals__text-holder__list">
-                            <li class="proffesionals__text-holder__list-item">
+                    <div class="text-holder__list-holder">
+                        <ul class="text-holder__list">
+                            <li class="list_item">
                                 <strong>Accessory makers</strong>
                                 <p>While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun</p>
                             </li>
-                            <li class="proffesionals__text-holder__list-item">
+                            <li class="list_item">
                                 <strong>Alterationists</strong>
                                 <p>If you are looking for a new way to promote your business that won’t cost you more money, </p>
                             </li>
-                            <li class="proffesionals__text-holder__list-item">
+                            <li class="list_item">
                                 <strong>Custom Design designers</strong>
                                 <p>If you are looking for a new way to promote your business that won’t cost you more money, </p>
                             </li>                            
                         </ul>
                     </div>
                 </div>
-                <div class="section-professionals__imageholder">
+                <div class="section-professionals__image-holder">
                     <img src="src/image/Image-marketers.png" alt="marketers image" class="section-marketers__image">
-                </div>
-            </div>
-        </section>
-        <!--Product Managers-->
-        <section class="section-prod">
-            <div class="section-prod__container">
+                </div>                
+            </section>
+            <!--Product Managers-->
+            <section class="section-prod">                
                 <div class="section-prod__imageholder">
                     <img src="src/image/Image-product.png" alt="product section image" class="section-prod__image">
                 </div>
                 <div class="section-prod__text-holder">
-                    <div class="text-holder__intro">
+                    <div class="text-holder_intro">
                         <span>Easier decision making for</span>
                     </div>                    
-                        <h2 class="text-holder__title">Product Managers</h2>
-                    <div class="text-holder__description">
+                        <h2 class="text-holder_title">Product Managers</h2>
+                    <div class="text-holder_description">
                         <p>The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person. </p>
                     </div>
                     <div class="text-holder__list-holder">
                         <ul class="text-holder__list">
-                            <li class="text-holder__list-item">                                
+                            <li class="text-holder__list_item">                                
                                 <p>Never worry about overpaying for your energy again.</p>
                             </li>
-                            <li class="text-holder__list-item">
+                            <li class="text-holder__list_item">
                                 <p>We will only switch you to energy companies that we trust and will treat you right</p>
                             </li>
-                            <li class="text-holder__list-item">                                                               
+                            <li class="text-holder__list_item">                                                               
                                 <p>We track the markets daily and know where the savings are.</p>
                             </li>
                         </ul>
                     </div>
-                </div>
-            </div>
-        </section>
-        <!--Marketers-->
-        <section class="section-marketers">
-            <div class="section-marketers__container">
+                </div>                
+            </section>
+            <!--Marketers-->
+            <section class="section-marketers">                
                 <div class="section-marketers__text-holder">                    
-                    <div class="text-holder__pseudo-title">
+                    <div class="pseudo-title">
                         <span>Optimisation for</span>
                     </div>
                     <h2>Marketers</h2>
-                    <div class="text-holder__explanation">
+                    <div class="explanation">
                         <p>Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior.</p>
                     </div>
                     <div class="text-holder__list-holder">
-                        <ul class="marketers__text-holder__list">
-                            <li class="marketers__text-holder__list-item">
+                        <ul class="text-holder__list">
+                            <li class="list_item">
                                 <strong>Accessory makers</strong>
                                 <p>While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun</p>
                             </li>
-                            <li class="marketers__text-holder__list-item">
+                            <li class="list_item">
                                 <strong>Alterationists</strong>
                                 <p>If you are looking for a new way to promote your business that won’t cost you more money, </p>
                             </li>
-                            <li class="marketers__text-holder__list-item">
+                            <li class="list_item">
                                 <strong>Custom Design designers</strong>
                                 <p>If you are looking for a new way to promote your business that won’t cost you more money, </p>
                             </li>                            
@@ -195,16 +199,18 @@
                 </div>
                 <div class="section-marketers__imageholder">
                     <img src="src/image/Image-marketers.png" alt="marketers image" class="section-marketers__image">
-                </div>
-            </div>
-        </section>
+                </div>                
+            </section>
+        </div>    
     </main>
     <footer class="footer">
-        <div class="footer-container">
-            <div class="container__footer-logo">
-                <img src="src/image/Logo.png" alt="logo">
+        <div class="container">
+            <div class="logo">
+                <a href="#" class="logo__link">
+                    <img src="src/image/Logo.png" alt="logo">
+                </a>                
             </div>
-            <div class="list-container">
+            <div class="list-holder">
                 <ul class="list-about-us">
                     <li class="about-list-item">
                         <span>About Us</span>
@@ -233,9 +239,11 @@
                         <span>Terms of Service</span>
                     </li>
                 </ul>
-                <form class="button">
+                <form class="footer__button">
                     <input type="text">
-                    <button type="submit">Sign up Now</button>
+                    <div class="footer__button-holder">
+                        <button type="submit" class="btn btn_orange">Sign up Now</button>
+                    </div>
                 </form>
             </div>    
         </div>        

@@ -1,0 +1,11 @@
+.section-marketers {
+    @extend .section-professionals
+}
+
+.section-marketers__text-holder {
+    @extend .section-professionals__text-holder
+}
+
+.section-marketers__imageholder {
+    @extend .section-professionals__image-holder
+}

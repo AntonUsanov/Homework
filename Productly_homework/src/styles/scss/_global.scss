@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: $black-light;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: $font-size-global;
+    line-height: $line-height;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 36px;
+    color: $black;
+    padding: 3px 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.btn-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -7px;
+
+    &__item {
+        display: block;
+        padding: 0 7px;
+    }
+}
+
+.btn {
+    display: block;
+    text-decoration: none;
+    background-color: $orange;
+    border-radius: 4px;
+    padding: 10px 23px;
+    color: $white;
+
+    &_white {
+        background-color: $white;
+        border: 1px solid #BCD0E5;
+        color: $blue;
+    }
+}
+    

@@ -1,0 +1,39 @@
+.hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 130px 0 110px;
+}
+
+.hero-section__text-holder, .hero-section__image-holder {
+    display: block;
+    width: 50%;
+}
+
+.hero-section__title {
+    color: $black;
+    font-weight: bold;
+    font-size: 44px;
+}
+
+.btn-list {
+    padding-left: 0;
+}
+
+.white_big {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   text-decoration: underline;
+   font-weight: 600;
+   font-size: $font-size-global;
+   color: $orange;
+   border: none;
+}
+
+.btn_white__image {
+    margin-right: 8px;
+}
+
+.hero-section__image {
+    padding-left: 60px;
+}

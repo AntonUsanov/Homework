@@ -1,0 +1,36 @@
+.tools-section {
+    display: block;
+    margin: 0 -7px 200px -7px;
+   
+}
+
+.tools-section__title {
+    text-align: center;
+    padding-bottom: 55px;
+}
+
+.tools-section__list {
+    list-style: none;
+    padding: 0 15px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tools-section__list-item {
+    max-width: 25%;
+    padding-right: 40px;
+}
+
+.tools-section__list-item h3 {
+    color: $black;
+    font-weight: 600;
+    font-size: 22px;    
+}
+
+.tool-section__button-holder {
+    display: block;
+    text-align: center;
+    width: 175px;
+    margin: 0 auto;
+}
