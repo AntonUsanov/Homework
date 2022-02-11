@@ -1,0 +1,11 @@
+.section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    padding: 30px;
+    background-color: chocolate;
+    border: 3px solid rgb(19, 7, 88);
+    width: 29%;
+}

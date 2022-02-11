@@ -1,0 +1,36 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1200px;
+}
+
+.container {
+  width: 1155px;
+}
+
+/* mixin usage */
+/*--------------------------------
+	Responsive ratio
+	Used for creating scalable elements that maintain the same ratio
+	example:
+	.element {
+		@include responsive-ratio(400, 300);
+	}
+*/
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.col {
+  padding: 30px;
+  background-color: chocolate;
+  border: 3px solid #130758;
+  width: 29%;
+}
