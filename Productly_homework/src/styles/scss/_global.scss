@@ -12,6 +12,18 @@ body {
     font-weight: 500;
     font-size: $font-size-global;
     line-height: $line-height;
+
+    @include breakpoint(md){
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    @include breakpoint(xxs){
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 1;
+    }
 }
 
 img {
@@ -25,6 +37,15 @@ h2 {
     color: $black;
     padding: 3px 0;
     margin: 0;
+
+    @include breakpoint(md){
+        font-size: 18px;
+    }
+
+    @include breakpoint(xxs){
+        font-size: 16px;
+        text-align: center;
+    }
 }
 
 .container {
@@ -59,5 +80,16 @@ h2 {
         border: 1px solid #BCD0E5;
         color: $blue;
     }
+
+    
+   @include breakpoint(md){
+    font-size: 12px;
+    padding: 7px 15px;
+}
+
+    @include breakpoint(xxs){
+    font-size: 10px;
+    padding: 7px 15px;
+}
 }
     

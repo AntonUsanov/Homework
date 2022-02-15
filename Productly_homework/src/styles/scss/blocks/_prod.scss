@@ -4,8 +4,29 @@
     justify-content: space-between;
      margin-bottom: 100px;
 
+        @include breakpoint(md){
+            justify-content: center;
+        }
+
     &__imageholder, &__text-holder {
-        max-width: 50%;
+        width: 50%;
+
+        @include breakpoint(md){
+            width: 100%;
+        }
+    }
+
+    &__text-holder {
+        @include breakpoint(md){
+            margin-bottom: 30px;
+        }
+    }
+
+    &__imageholder {
+        @include breakpoint(md){
+            max-width: 350px;
+            order: 2;
+        }
     }
 }
 
@@ -18,7 +39,11 @@
     justify-content: space-between;
     position: relative;
     padding-left: 65px;
-   margin-bottom: 30px;
+    margin-bottom: 30px;
+
+    @include breakpoint(md){
+        margin-bottom: 10px;
+    }
 }
 
 .text-holder__list_item::before {

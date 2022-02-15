@@ -5,6 +5,12 @@
     left: 0;
     right: 0;
     top: 0;
+   
+    &.active {
+        .header__nav-holder {
+            transform: translateX(0);
+        }
+    }
 
     &__nav-holder {
         display: flex;
@@ -12,12 +18,47 @@
         justify-content: flex-end;
         width: calc(100%-185px);
         align-items: center;
+
+        @include breakpoint("md"){
+            flex-direction: column;
+            width: 100%;
+            align-content: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            z-index: 2;
+            background-color: white;
+            transform: translateX(100%);
+        }
     }
 
     .container {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+
+        @include breakpoint("md"){
+            position: relative;
+        }      
+    }
+
+    .btn-list {
+        @include breakpoint("md"){
+            display: flex;
+            flex-direction: column;
+            z-index: 2;
+        }
+
+        @include breakpoint("xxs"){
+           margin-left: -40px;
+        }
+
+    li {
+        @include breakpoint("md"){
+            margin-bottom: 20px;
+        }
+    }
     }
 }
 
@@ -30,16 +71,38 @@
 }
 
 .nav {
+    @include breakpoint("md"){
+        flex-direction: column;
+        margin-left: -40px;
+        padding: 0;         
+    }
+
     &--list {
         list-style: none;
         display: flex;
         flex-wrap: wrap;
         margin: 0 --15px;
+        
+
+        @include breakpoint("md"){
+            display: flex;
+            flex-direction: column;
+            margin: 0 0 20px;         
+        }
+
     }
 
     &__item {
         display: inline-block;
         padding: 0 15px;
+        
+        @include breakpoint("md"){
+            display: block;
+            padding: 0;
+            width: 100%;
+            padding: 10px;
+            text-align: center;              
+        }
     }
 
     &__link {
@@ -48,8 +111,65 @@
         font-size: 14px;
         transition: color ease-in-out 0.3s;
 
+        @include breakpoint("md"){
+            flex-direction: column;
+        }
+
         &:hover {
             color: grey;
         }
+    }
+}
+
+.nav-opener {
+    display: none;
+    z-index: 3;
+
+    @include breakpoint('md'){
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 30px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+
+    &::before {
+        content: '';
+        width: 40px;
+        height: 2px;
+        border-radius: 4px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #2f202f;
+    }
+
+    &::after {
+        content: '';
+        width: 40px;
+        height: 2px;
+        border-radius: 4px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #2f202f;
+    }
+    
+    span {
+        width: 40px;
+        height: 2px;
+        border-radius: 4px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #2f202f;
     }
 }

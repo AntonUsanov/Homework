@@ -1,6 +1,14 @@
 .tools-section {
     display: block;
     margin: 0 -7px 200px -7px;
+
+    @include breakpoint(md){
+        
+    }
+
+    @include breakpoint(xxs){
+       margin-bottom: 100px;
+    }
    
 }
 
@@ -11,15 +19,34 @@
 
 .tools-section__list {
     list-style: none;
-    padding: 0 15px 60px;
+    padding: 0 15px 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0 -20px;
+
+    @include breakpoint(md){
+        
+    }
+
+    @include breakpoint(xxs){
+       padding-bottom: 0;
+       margin: 0 -10px;
+    }
 }
 
 .tools-section__list-item {
-    max-width: 25%;
-    padding-right: 40px;
+    width: 25%;
+    padding: 0 20px 40px;
+
+    @include breakpoint(md){
+        width: 50%;
+    }
+
+    @include breakpoint(xxs){
+        width: 50%;
+        padding: 0 10px 20px;
+    }
 }
 
 .tools-section__list-item h3 {
