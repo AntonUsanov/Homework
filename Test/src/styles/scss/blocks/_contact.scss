@@ -1,0 +1,51 @@
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 1px solid #E4E4E4;
+    padding: 120px 20px 0 20px;
+
+    .contact-section__text {
+        width: 38%;
+
+        h2 {
+            margin-top: 0;
+        }
+
+        p {
+            opacity: 0.8;
+        }
+    }
+
+    .contact-section__form {
+        width: 38%;
+        
+        input {
+            display: block;
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #262A3F;
+            opacity: 0.5;
+            padding: 12px 0;
+            font-family: 'playfair';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 20px;
+            letter-spacing: 0.08em;
+            margin-bottom: 30px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .button-holder {
+            width: 170px;
+            margin-bottom: 130px;
+
+            span {
+                width: 158px;
+            }
+        }
+    }
+}

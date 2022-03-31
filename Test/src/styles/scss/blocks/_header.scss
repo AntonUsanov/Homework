@@ -1,0 +1,123 @@
+.header {
+    padding-top: 31px;
+
+    &__pseudo-container {
+        background: linear-gradient(270deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.244636) 24.1%, rgba(255, 255, 255, 0) 47.19%), rgba(255, 255, 255, 0.02);
+        backdrop-filter: blur(9px);
+    }
+   
+    .container {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        margin-bottom: 160px;
+
+        @include breakpoint('sm') {
+           
+        }
+    }
+}
+
+.logo {
+    max-width: 25%;    
+    margin: auto 30px auto 0;
+
+    &:hover {
+        opacity: 50%;
+    }
+
+    @include breakpoint('sm') {
+                  
+    }
+}
+
+.header__nav-holder{
+    max-width: 75%;
+    
+    .nav {
+        @include breakpoint('lg') {
+            max-width: 85%;
+        }
+
+        @include breakpoint('sm') {
+           
+            
+        }
+    }
+
+    .header__button-holder {
+        max-width: 15%;
+
+        @include breakpoint('sm') {
+              
+        }
+    }
+
+        @include breakpoint('sm') {
+              
+        }
+   
+}
+
+
+.header__nav-holder, .nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nav__list {
+    @include breakpoint('sm') {
+       
+    }
+}
+
+.nav__link {
+    font-family: "latoregular";
+    font-size: 14px;
+    line-height: 24px;
+    padding-right: 32px;
+    text-decoration: none;
+    color: $dark-blue;
+
+    &:hover {
+        opacity: 50%;
+    }
+}
+
+.header__button-holder {
+    width: 32px;
+    height: 32px;
+    align-self: center;
+    margin-left: 8px;
+    background-color: $dark-blue;
+    opacity: 0.3;
+    border-radius: 1px;
+    position: relative;
+
+    &:hover {
+        opacity: 50%;
+    }
+
+    @include breakpoint('sm') {
+        
+    }
+}
+
+.button svg {
+    width: 100%;
+    position: absolute;           
+    top: 48%;                        
+    transform: translate(0, -50%)
+}
+
+.header__background img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+}
