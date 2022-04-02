@@ -1,0 +1,28 @@
+.footer {
+    .container {
+        border-top: solid 1px #4B4136;
+        padding: 21px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    span {
+        color: $grey;
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    a {
+        color: $orange;
+        font-size: 12px;
+        line-height: 30px;
+        padding: 0 4px 0 4px;
+    }
+}
+
+.footer-textholder span {
+    height: 20px;
+    border: solid 0.5px #4B4136;
+    background-color: #4B4136;
+}

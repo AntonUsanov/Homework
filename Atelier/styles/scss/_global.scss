@@ -36,9 +36,17 @@ ul {
 a {
     text-decoration: none;
     color: $grey;
+    transition-duration: 0.4s;
 
     &:hover {
         color: $orange;
         text-transform: uppercase;
+        transition-duration: 0.4s;
+        transform-style:flat;
     }
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
