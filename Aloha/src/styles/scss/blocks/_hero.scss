@@ -1,0 +1,30 @@
+h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    margin-bottom: 136px;
+
+    @include breakpoint ('lg') {
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 70px;
+    }
+
+    @include breakpoint ('xs') {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+.img-holder {
+    margin-bottom: 84px; 
+
+    @include breakpoint ('lg') {       
+        margin-bottom: 20px;
+    }
+       
+    img {
+        width: 100%;        
+    }
+}

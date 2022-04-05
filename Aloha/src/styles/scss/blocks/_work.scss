@@ -1,0 +1,131 @@
+.work {
+    h2 {
+        font-weight: 400;
+        font-size: 80px;
+        margin-bottom: 56px;
+
+        @include breakpoint ('lg') {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 36px;
+        }
+    
+        @include breakpoint ('xs') {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.btn-holder {
+    margin-bottom: 90px;
+
+    @include breakpoint ('lg') {
+        margin-bottom: 36px;
+        text-align: center;
+    }
+
+    .btn {
+        font-size: 20px;
+        padding: 11px 17px;
+        border: 2px solid $black;
+        border-radius: 3px;
+
+        &:hover {
+            opacity: 50%;
+        }
+    }
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; 
+    
+    @include breakpoint ('xl') {
+        justify-content: center;
+    }
+}
+
+.text-holder {
+    .flex-responsive {
+        @include breakpoint ('xxl') {
+            order: 3;
+    }
+}
+
+    p {
+        max-width: 600px;
+        font-size: 38px;
+        margin-bottom: 45px;
+
+        @include breakpoint ('lg') {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+    }
+}
+
+.quote-holder {
+    background: #4B321D;
+    border-radius: 16px;
+    padding: 84px 60px;
+    margin-bottom: 84px;
+
+    @include breakpoint ('lg') {
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 80px;
+        color: $white;
+        margin-bottom: 45px;
+
+        @include breakpoint ('lg') {
+            font-size: 25px;
+        }
+    }
+
+    span {
+        font-size: 26px;
+        line-height: 36px;
+        color: $white;
+
+        @include breakpoint ('xs') {
+            font-size: 15px;
+        }
+    }
+}
+
+.fit-holder {
+    margin-bottom: 189px;
+
+    @include breakpoint ('lg') {
+        margin-bottom: 56px;
+    }
+    
+    h3 {
+        font-weight: 400;
+        font-size: 80px;
+        margin-bottom: 56px;
+
+        @include breakpoint ('lg') {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 36px;
+        }
+    
+        @include breakpoint ('xs') {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.img-holder {
+    @include breakpoint ('xxl') {
+            order: -3;
+    }
+}

@@ -1,0 +1,72 @@
+.footer {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 100px;
+        position: relative;
+
+        @include breakpoint ('xs') {
+            margin-bottom: 15px;
+         }
+    }
+
+    a {
+        font-size: 18px;
+
+        &:hover {
+            opacity: 50%;
+        }
+    }       
+}
+
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+
+        @include breakpoint ('xs') {
+           display: inline;
+        }
+
+        ul {
+            @include breakpoint ('xs') {
+                margin-bottom: 15px;
+             }
+        }
+
+        div {
+            margin-left: 178px;
+
+            @include breakpoint ('lg') {
+                margin-left: 90px;
+            }
+
+            @include breakpoint ('md') {
+                margin-left: 60px;
+            }
+
+            @include breakpoint ('xs') {
+                margin-left: 30px;
+            }
+        }
+}
+
+.copyright-holder {
+
+    @include breakpoint ('xs') {
+        max-width: 50%;
+    }
+
+        img {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 57px;
+        }
+
+        span {
+            display: block;
+            font-size: 18px;
+        }
+}
