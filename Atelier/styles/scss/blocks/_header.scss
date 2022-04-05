@@ -26,18 +26,15 @@
 }
 
 .logo-holder {
-    max-width: 75px; 
-        
+    max-width: 75px;        
 }
 
 .btn-holder {
-    width: 147px;
-    border: 1px solid $orange;
-    text-align: center;
-    align-items: center;
-    padding: 15px 0;
 
-    a {
+    a { 
+        border: 1px solid $orange;
+        text-align: center;
+        padding: 15px 25px;
         font-size: 11px;
         line-height: 22px;
         text-transform: uppercase;

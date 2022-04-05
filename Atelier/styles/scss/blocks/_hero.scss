@@ -3,10 +3,12 @@
     background-image: url("../../images/IMAGE.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-size: 100%;
-    padding-top: 120px;    
+    background-position: 50% 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;    
 
-    .text-holder {
+    .text-holder {        
         margin: 0 auto;        
         text-align: center;
 
@@ -33,11 +35,10 @@
     }
 
     .btn-holder {
-        width: 143px;
-        margin: 0 auto;
-        background-color: $orange;
+        text-align: center;      
         
         a {
+            background-color: $orange;
             color: $black;
 
             &:hover {

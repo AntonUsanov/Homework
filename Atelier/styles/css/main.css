@@ -98,16 +98,10 @@ img {
   max-width: 75px;
 }
 
-.btn-holder {
-  width: 147px;
+.btn-holder a {
   border: 1px solid #FFAE2B;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 15px 0;
-}
-.btn-holder a {
+  padding: 15px 25px;
   font-size: 11px;
   line-height: 22px;
   text-transform: uppercase;
@@ -118,8 +112,15 @@ img {
   background-image: url("../../images/IMAGE.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: 100%;
-  padding-top: 120px;
+  background-position: 50% 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .hero-section .text-holder {
   margin: 0 auto;
@@ -144,11 +145,10 @@ img {
   margin-bottom: 35px;
 }
 .hero-section .btn-holder {
-  width: 143px;
-  margin: 0 auto;
-  background-color: #FFAE2B;
+  text-align: center;
 }
 .hero-section .btn-holder a {
+  background-color: #FFAE2B;
   color: #181511;
 }
 .hero-section .btn-holder a:hover {
@@ -191,13 +191,16 @@ img {
 }
 
 .pages-item {
-  width: 32%;
-  text-align: center;
+  width: calc(100%/3);
+  padding: 0 10px 20px 10px;
+}
+.pages-item .pages-holder {
   padding: 41px 0;
+  text-align: center;
   border: 1px solid #4B4136;
-  margin-bottom: 20px;
 }
 .pages-item a {
+  display: block;
   padding-top: 20px;
 }
 
@@ -206,7 +209,7 @@ img {
   background-image: url("../../images/IMAGE2.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: 100%;
+  background-position: 50% 50%;
   margin-bottom: 158px;
 }
 
@@ -221,7 +224,7 @@ img {
 
 .services-item {
   min-width: 33%;
-  height: 350px;
+  min-height: 350px;
   border: 1px solid #4B4136;
   padding: 61px 20px 0 61px;
 }
@@ -348,6 +351,7 @@ img {
   height: 59px;
   border: 1px solid #4B4136;
   background-color: #181511;
+  color: #FFAE2B;
 }
 .subscription-form button {
   width: 420px;
@@ -399,6 +403,10 @@ img {
           align-items: center;
   padding-top: 14px;
 }
+.link-holder:hover {
+  opacity: 50%;
+}
+
 .footer .container {
   border-top: solid 1px #4B4136;
   padding: 21px 0;

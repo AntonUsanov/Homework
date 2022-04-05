@@ -31,13 +31,17 @@
 }
 
 .pages-item {
-    width: 32%;
-    text-align: center;
-    padding: 41px 0;
-    border: 1px solid #4B4136;
-    margin-bottom: 20px;
+    width: calc(100%/3);    
+    padding: 0 10px 20px 10px;
+
+    .pages-holder {
+        padding: 41px 0;
+        text-align: center;
+        border: 1px solid #4B4136;
+    }
 
     a {
+        display: block;
         padding-top: 20px;
     }
 }
@@ -47,6 +51,6 @@
     background-image: url('../../images/IMAGE2.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-size: 100%;
+    background-position: 50% 50%;
     margin-bottom: 158px;
 }
